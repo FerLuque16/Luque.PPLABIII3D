@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/estilo.css">
+    <script src="./js/scripts.js" type="module"></script>
+    <title>Document</title>
+</head>
+<body>
+    <header>
+        <img src="./images/tiendaAnimales.svg" alt="tienda de animales">
+        <nav>
+            <ul>
+              <li><a href="#">Nosotros</a></li>
+              <li><a href="#">Anuncio</a></li>
+              <li><a href="#">Blog</a></li>
+              <li><a href="#">Contacto</a></li>
+            </ul>
+        </nav>
+        <br>
+
+          
+    </header>
+    <section id="textoPrincipal">
+
+        <p class="administracion">Administracion</p>
+        <img src="./images/imagenAnimales.jpg" alt="" id="imagenPrincipal">
+    </section>
+    
+        <main id="main">
+            
+            <form >
+                <input type="hidden" name="id">
+                <fieldset>
+                    <legend>Informacion Del Anuncio</legend>
+                    <label for="">TITULO:</label>
+                    <br>
+                    <input type="text" name="titulo" placeholder="Titulo" required>
+                    <br>
+                    <label for="">TRANSACCION</label>
+                    <br>
+                    <input type="radio" name="tipoTransaccion" value="venta" checked required>VENTA 
+                    <br>
+                    <input type="radio" name="tipoTransaccion" value="alquiler" required>ALQUILER 
+                    <br>
+                    <label for="">DESCRIPCION</label>
+                    <br>
+                    <input type="text" name="descripcion" placeholder="Descripcion" required>
+                    <br>
+                    <label for="">ANIMAL:</label>
+                    <br>
+                    <input type="radio" name="tipo" value="perro" checked required>PERRO
+                    <br>
+                    <input type="radio" name="tipo" value="gato" required>GATO
+                    <br>
+                    <label for="">PRECIO:</label>
+                    <br>
+                    <input type="number" min="0"  name="precio" placeholder="Precio" required>
+                    <br>
+                    <label for="">FECHA DE NACIMIENTO:</label>
+                    <br>
+                    <img src="./images/oveja.svg" alt="oveja" class="icono" >
+                    <input type="date" name="fecha" placeholder="dd/mm/aa" required>
+                    <br>
+                    <label for="">RAZA:</label>
+                    <br>
+                    <img src="./images/perro.svg" alt="perro" class="icono" >
+                    <input type="text" name="raza" placeholder="Raza" required>
+                    <br>
+                    <label for="">VACUNADO:</label>
+                    <br>
+                    <img src="./images/gato.svg" alt="gato" class="icono">                                      
+                    <select name="vacunado" id="vacunado">
+                        <option value="vacunado">Si</option>
+                        <option value="noVacunado">No</option>
+                    </select>
+
+                    <br>
+                    <br>
+ 
+                </fieldset>
+
+                <input id="btnAlta" type="submit" value="Guardar" class="boton" >
+
+                <input type="button" value="Modificar" id="btnModificar" class="oculto" class="boton">
+
+                <input type="button" value="Eliminar" id="btnEliminar" class="oculto" class="boton">
+
+                <input type="button" value="Cancelar" id="btnCancelar" class="oculto" class="boton">
+
+    
+            </form>
+            <div id="spinnerContainer">
+                
+            </div>
+            <div id="divLista">
+
+                
+            </div>
+            
+        </main>
+        
+
+    
+    <footer>
+        <p id="pHeader">Todos los derechos reservados &copy;</p>
+        <nav>
+            <ul id="ulFooter">
+                <li><a href="#">Nosotros</a></li>
+                <li><a href="#">Avisos</a></li>
+                <li><a href="#">Blog</a></li>
+                <li><a href="#">Contacto</a></li>
+            </ul>
+        </nav>
+
+    </footer>
+
+
+</body>
+</html>
